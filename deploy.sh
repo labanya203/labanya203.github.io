@@ -10,6 +10,7 @@ npx staticrypt ./index.html ./plots/ -r
 
 
 # Add all changed files (not in .gitignore) to git staging
+git add -u
 git add .
 
 # Prepare commit message
