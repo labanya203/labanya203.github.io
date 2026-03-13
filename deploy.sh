@@ -6,7 +6,7 @@
 pwsh -Command "Set-ExecutionPolicy -ExecutionPolicy Bypass -Scope Process"
 
 # Run staticrypt to encrypt index.html and plots directory
-npx staticrypt ./index.html ./plots/ -r --directory docs
+npx staticrypt ./src/index.html ./src/plots/ -r --directory docs
 
 
 # Add all changed files (not in .gitignore) to git staging
