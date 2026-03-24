@@ -8,4 +8,4 @@
     > ⚠️ **Warning:** Do not commit the `.env` file to git and publish to github.
 2. Now add the html plots in the `./src/plots` directory, and update `./src/index.html` to edit the list of plots.
     > ⚠️ **Warning:** Do not commit the un-encrypted html files to github. They should only live locally. These are added in the `.gitignore` file so that git doesn't track them. Only the encrypted html files should be pushed to remote.
-3. Now run `deploy.sh "<commit message>"` to deploy the changes. It make take a minute or two for the changes to show up in https://labanya203.github.io/
+3. Now run `./deploy.sh "<commit message>"` to deploy the changes. It make take a minute or two for the changes to show up in https://labanya203.github.io/
