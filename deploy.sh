@@ -16,8 +16,8 @@ spinner() {
 
 # Set PowerShell execution policy for the process
 #pwsh -Command "Set-ExecutionPolicy -ExecutionPolicy Bypass -Scope Process"
-echo "Setting PowerShell execution policy to RemoteSigned for the current user:"
-Set-ExecutionPolicy -Scope CurrentUser -ExecutionPolicy RemoteSigned
+# echo "Setting PowerShell execution policy to RemoteSigned for the current user:"
+# Set-ExecutionPolicy -Scope CurrentUser -ExecutionPolicy RemoteSigned
 
 # Run staticrypt to encrypt index.html and plots directory
 printf 'Encrypting files with staticrypt... '
@@ -28,8 +28,7 @@ kill "$SPIN_PID" # Kill the spinner process
 printf '\n' # Move to a new line after the spinner stops
 
 # Add all changed files (not in .gitignore) to git staging
-git add -u
-git add .
+git -c advice.all=false add .
 
 # Prepare commit message
 DATE=$(date +"%Y-%m-%d")
