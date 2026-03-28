@@ -3,7 +3,7 @@
 # Usage: ./precommit.sh [optional commit message]
 
 # Set PowerShell execution policy for the process
-pwsh -Command "Set-ExecutionPolicy -ExecutionPolicy Bypass -Scope Process"
+#pwsh -Command "Set-ExecutionPolicy -ExecutionPolicy Bypass -Scope Process"
 
 # Run staticrypt to encrypt index.html and plots directory
 npx staticrypt ./src/index.html ./src/plots/ -r --directory docs
