@@ -4,10 +4,10 @@
 
 # Set PowerShell execution policy for the process
 #pwsh -Command "Set-ExecutionPolicy -ExecutionPolicy Bypass -Scope Process"
-
+echo "Running staticrypt and preparing commit..."
 # Run staticrypt to encrypt index.html and plots directory
 npx staticrypt ./src/index.html ./src/plots/ -r --directory docs
-
+echo "Staticrypt completed. Adding changes to git staging..."
 
 # Add all changed files (not in .gitignore) to git staging
 git add -u
