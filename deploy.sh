@@ -4,7 +4,7 @@
 
 # Set PowerShell execution policy for the process
 #pwsh -Command "Set-ExecutionPolicy -ExecutionPolicy Bypass -Scope Process"
-Set-ExecutionPolicy -Scope CurrentUser -ExecutionPolicy RemoteSigned
+# Set-ExecutionPolicy -Scope CurrentUser -ExecutionPolicy RemoteSigned
 
 # Run staticrypt to encrypt index.html and plots directory
 npx staticrypt ./src/index.html ./src/plots/ -r --directory docs --verbose
